@@ -17,13 +17,11 @@ libgltools_la_CPPFLAGS = \
 
 libgltools_la_CFLAGS = \
 	$(GL_CFLAGS) \
-	$(GLU_CFLAGS) \
-	$(X11_CFLAGS)
+	$(GLU_CFLAGS)
 
 libgltools_la_LDFLAGS = \
 	$(GL_LIBS) \
-	$(GLU_LIBS) \
-	$(X11_LIBS)
+	$(GLU_LIBS)
 
 pkgincludedir = $(includedir)/GLTools
 pkginclude_HEADERS = \
