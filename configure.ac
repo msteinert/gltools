@@ -25,6 +25,7 @@ PKG_CHECK_MODULES([X11], [x11])
 
 # Output files
 AC_CONFIG_FILES([
+	gltools.pc
 	Makefile
 	src/Makefile
 ])

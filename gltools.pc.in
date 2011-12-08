@@ -1,0 +1,11 @@
+prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: GLTools
+Description: The GL Tools library that accompanies the OpenGL Super Bible
+Version: @VERSION@
+Requires:
+Requires.private: x11 gl glu
+Libs: -L${libdir} -lgltools
+CFlags: -I${includedir}/GLTools
