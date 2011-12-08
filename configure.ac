@@ -17,11 +17,11 @@ LT_INIT([disable-static])
 AC_PROG_CXX
 
 # Check for libraries
-AC_CHECK_LIB([GL], [glClear])
-AC_CHECK_LIB([GLU], [gluSphere])
-AC_CHECK_LIB([X11], [XOpenDisplay])
 AC_CHECK_LIB([glut], [glutCreateWindow])
 AC_CHECK_LIB([m], [exp])
+PKG_CHECK_MODULES([GL], [gl])
+PKG_CHECK_MODULES([GLU], [glu])
+PKG_CHECK_MODULES([X11], [x11])
 
 # Output files
 AC_CONFIG_FILES([

@@ -15,6 +15,16 @@ libgltools_la_CPPFLAGS = \
 	-I$(top_srcdir)/include \
 	-I$(top_srcdir)/include/GL
 
+libgltools_la_CFLAGS = \
+	$(GL_CFLAGS) \
+	$(GLU_CFLAGS) \
+	$(X11_CFLAGS)
+
+libgltools_la_LDFLAGS = \
+	$(GL_LIBS) \
+	$(GLU_LIBS) \
+	$(X11_LIBS)
+
 pkgincludedir = $(includedir)/GLTools
 pkginclude_HEADERS = \
 	$(top_srcdir)/include/GLShaderManager.h \
